@@ -1,9 +1,22 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
+
+//import all scss from app.css
+import "./styles/App.css";
+
 const App = () => {
   return (
-    <h1>
-      Bonjour à tous !!! Par contre je vais me cooucher car j'en ai marre, je
-      verrai demain pour bosser un peu plus
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+
+        {/*si l'url correspond a rien */}
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

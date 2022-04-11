@@ -1,0 +1,21 @@
+.container_footer {
+    border:  solid 3px black;
+    display: flex;
+    justify-content: center;
+   
+   
+    .ul_footer {
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        color: white;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        list-style-type: none;
+        background-image: url("../assets/images/body-background.jpg");
+        & li {
+            padding: 1em;
+        }
+    }
+}
