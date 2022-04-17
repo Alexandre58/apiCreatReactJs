@@ -1,21 +1,32 @@
+@import "./variable";
+@import "./mixins";
+
+
 .container_footer {
     border:  solid 3px black;
     display: flex;
     justify-content: center;
-   
+    
    
     .ul_footer {
+        z-index: 5;
         display: flex;
         position: fixed;
         justify-content: space-around;
-        color: white;
+        color: $color_text;
         width: 100%;
         bottom: 0;
         margin: 0;
         list-style-type: none;
         background-image: url("../assets/images/body-background.jpg");
+        @include mobile_max_600 {
+            flex-wrap: wrap;
+         }
         & li {
             padding: 1em;
+            @include mobile_max_400 {
+                font-size: 0.6em;
+             }
         }
     }
 }

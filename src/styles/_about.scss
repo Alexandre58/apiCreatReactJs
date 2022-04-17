@@ -1,3 +1,54 @@
-.h1_aboutUs {
-    color: blue;
+@import "./variable";
+@import "./mixins";
+
+.container_about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  @include box-shadow_black;
+  margin: 100px auto;
+ // border: solid 1px rgb(234, 14, 14);
+  max-width: 900px;
+  height: 100vh;
+
+  .h1_aboutUs {
+    z-index: 2;
+    color: $color_text_black;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.419);
+    border-radius: $border_radius_50;
+    text-shadow: 2px 2px 2px rgba(78, 77, 77, 0.858);
+    font-size: 1.5em;
+    margin-top: 80px;
+    padding: 1em;
+    // border: solid 1px rgb(234, 14, 14);
+    letter-spacing: 0.3em;
+    @include mobile_max_400 {
+      font-size: 0.8em;
+    }
+  }
+
+  .p_AboutUs {
+    z-index: 3;
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+    color: $color_text_black;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(253, 248, 248, 0.858);
+    line-height: 2em;
+    @include mobile_max_400 {
+      font-size: 0.8em;
+    }
+  }
+  .img_about {
+    opacity: 0.4;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

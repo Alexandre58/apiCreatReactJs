@@ -1,20 +1,85 @@
-.article_Card_container  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: solid 1px black;
-    max-width: 900px;
-    border-radius: 15px;
-    padding: 2em;
-    row-gap: 2em;
-    .img_Card_container {
-        //border: solid 1px rgb(225, 13, 13);
-        display: flex;
-        justify-content: space-around;
-        & img {
-            border-radius: 15px;
-        }
-      
+@import "./variable";
+@import "./mixins";
 
+.article_Card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //border: solid 1px black;
+  @include box-shadow_black;
+  max-width: 500px;
+  min-width: 550px;
+  background-color: rgba(19, 19, 19, 0.71);
+  z-index: 10;
+  border-radius: 15px;
+  padding: 2em;
+  row-gap: 2em;
+  margin-bottom: 1em;
+  @include mobile_max_900 {
+    padding: 0.3em;
+    min-width: 400px;
+  }
+  @include mobile_max_600 {
+    padding: 0.3em;
+    min-width: 350px;
+  }
+  @include mobile_max_400 {
+    padding: 0.3em;
+    min-width: 200px;
+  }
+  .img_Card_container {
+    //border: solid 1px rgb(225, 13, 13);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    justify-content: space-around;
+    & img {
+      border-radius: 15px;
+      width: 30%;
+      margin-top: 2em;
+      @include mobile_max_600 {
+        border-radius: 100px;
+        width: 20%;
+        margin-top: 2em;
+      }
     }
+  }
+  .p_card {
+    & h2 {
+       font-size: 1.5em;
+       border-top: 3px solid rgba(244, 242, 242, 0.435);
+       width: 20%;
+       text-align: center;
+       border-radius: $border_radius_5 ;
+       color:$color_text;
+       font-weight: 200;
+       min-width: 100px ;
+     //  @include box-shadow_white;
+     @include mobile_max_400 {
+      font-size: 1em;
+      min-width: 60px ;
+    }
+    }
+    .p_card_unity {
+   //   border: 1px solid red;
+      font-size: 1em;
+      font-weight: 100;
+      padding: 1em;
+      border-top: 3px solid rgba(244, 242, 242, 0.435);
+      border-bottom: 3px solid rgba(244, 242, 242, 0.435);
+      color:$color_text;
+   //   @include box-shadow_white;
+      border-radius: $border_radius_5 ;
+      letter-spacing: 0.2em;
+      line-height: 1.5em;
+      text-shadow:2px 2px 2px rgba(8, 8, 8, 0.851) ;
+      @include mobile_max_400 {
+        padding: 0;
+        font-size: 0.8em;
+      }
+     
+    }
+  }
+
 }

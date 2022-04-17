@@ -1,13 +1,15 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-
+import img_about from "../assets/images/ThierryGrossePiece.jpg";
 const About = () => {
   return (
     <>
       <Navigation />
-      <div>
-        <h1 className="h1_aboutUs">A propos de nous</h1>
+      <div className="container_about">
+        <img className="img_about" src={img_about} alt="image grosse pices" />
+        <h1 className="h1_aboutUs">À propos de nous</h1>
+
         <p className="p_AboutUs">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum non
           facilis est autem suscipit corrupti laudantium, magni quae! Libero,
