@@ -1,10 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+//import imgThierry from "../assets/images/photo-thierry.jpg";
+import Logo from "./Logo";
 
 const Navigation = () => {
   return (
     <>
       <div className="navigation_container">
+        <Logo />
         <ul className="ul_navigation">
           <NavLink
             to="/"

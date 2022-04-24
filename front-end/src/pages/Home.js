@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Card from "../components//Card";
+import Card from "../components/Card";
 const Home = () => {
   return (
     <>
@@ -12,26 +12,31 @@ const Home = () => {
           <h1 className="accueil">Bienvenue sur notre appli</h1>
         </div>
         <section className="container_home">
-          <h2 className="h2_Home">HOME</h2>
+          <h2 className="h2_Home">ACCUEIL</h2>
           <div className="container_card_article">
             <aside className="loremc_container_aside">
               <h2>Blablabla</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                facilis harum quibusdam, tempore accusamus obcaecati nihil
-                praesentium ullam explicabo voluptatibus nostrum quam eos ut id
-                voluptatum quas culpa illo velit. Deleniti sequi optio aliquid
-                quas. A numquam quaerat perferendis nobis assumenda dolorum
-                praesentium expedita placeat! Fugiat quia quod architecto enim!
-                Veniam iure consectetur minus ea non maxime eveniet dolorum cum
-                atque quam quos hic repellendus voluptas aut aperiam, distinctio
-                suscipit, id libero illo aliquid exercitationem odit qui nisi.
-                Recusandae accusantium vero quaerat atque odio ea, distinctio
-                harum sapiente delectus dicta labore quos, eum nisi similique
-                alias officiis nemo a suscipit optio perferendis? Iure eum esse
-                quidem quis blanditiis enim magnam dolor fugit ut. Non, ad.
-                Exercitationem necessitatibus delectus enim. Facere optio
-                blanditiis suscipit maiores vel voluptatibus eum, sunt
+                Lorem ipsum dolor sit amet strong{" "}
+                <strong> consectetur adipisicing elit.</strong>
+                <em>
+                  {" "}
+                  Magni facilis harum quibusdam, tempore accusamus obcaecati
+                  nihil praesentium ullam explicabo voluptatibus nostrum quam
+                  eos ut id voluptatum quas culpa illo velit. Deleniti sequi
+                  optio aliquid quas. A numquam quaerat perferendis nobis
+                  assumenda dolorum praesentium expedita placeat! Fugiat quia
+                  quod architecto enim! Veniam iure consectetur minus ea non
+                  maxime eveniet dolorum cum atque quam quos hic repellendus
+                  voluptas aut aperiam, distinctio suscipit, id libero illo
+                  aliquid exercitationem odit qui nisi. Recusandae accusantium
+                  vero quaerat atque odio ea, distinctio harum sapiente delectus
+                  dicta labore quos, eum nisi similique alias officiis nemo a
+                  suscipit optio perferendis? Iure eum esse quidem quis
+                  blanditiis enim magnam dolor fugit ut. Non, ad. Exercitationem
+                  necessitatibus delectus enim. Facere optio blanditiis suscipit
+                  maiores vel voluptatibus eum, sunt{" "}
+                </em>
                 perferendis quasi quia dolorem asperiores esse? Maxime quaerat
                 hic ipsum qui impedit corrupti nulla eum modi unde temporibus
                 ullam libero facilis, fugit, porro laboriosam pariatur odit

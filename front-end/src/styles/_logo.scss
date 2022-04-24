@@ -1,0 +1,10 @@
+.img_Logo_container {
+    position: absolute;
+    left: 50%;
+    transform :translate(-50%,50%);
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: solid 2px rgb(235, 230, 230);
+}

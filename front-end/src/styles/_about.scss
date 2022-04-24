@@ -15,10 +15,11 @@
 
   .h1_aboutUs {
     z-index: 2;
-    color: $color_text_black;
+    color: $color_text;
+      text-shadow:2px 2px 2px rgba(8, 8, 8, 0.851) ;
     border-bottom: 3px solid rgba(0, 0, 0, 0.419);
     border-radius: $border_radius_50;
-    text-shadow: 2px 2px 2px rgba(78, 77, 77, 0.858);
+   
     font-size: 1.5em;
     margin-top: 80px;
     padding: 1em;
